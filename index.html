@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<div class="main">
+    <div class="left-container">
+      <h1>Stay updated!</h1>
+      <p>  Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="para">
+        <p><img src="assets/images/icon-list.svg" alt="">  Product discovery and building what matters</p>
+        <p><img src="assets/images/icon-list.svg" alt="">  Measuring to ensure updates are a success</p>
+        <p><img src="assets/images/icon-list.svg" alt="">  And much more!</p>
+      </div>
+      <form class="sign-up-form">
+        <label for="email">Email address</label>
+        <span class="error-message hide">Invalid Email</span>
+        <br>
+        <input id="email" type="email" placeholder="example@123gmail.com">
+        <button class="btn submit-btn">
+          Subscribe to monthly Newsletter
+        </button>
+      </form>
+    </div>
+    <div class="right-container">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="img">
+    </div>
+  </div>
+
+  <!-- Submit-feedback  -->
+  <div class="hidden hide">
+      <div class="box">
+        <img src="assets/images/icon-list.svg" alt="">
+        <h2>Thanks for subscribing!</h2>
+        <div class="letter_box">
+          <p>A confirmation email has been sent to <span class="mail">abcd@gmail.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button class="btn dismiss_btn">
+          Dismiss message
+        </button>
+      </div>
+  </div>
+  <div class="hide"></div>
+<script src="script.js"></script>
+</body>
+</html>

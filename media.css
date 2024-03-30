@@ -1,0 +1,57 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --tomato-light: hsl(4, 100%, 95%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --gradient-pink: #ff3e83;
+    --gradient-orange: #fd634a;
+    --gradient-shadow: #ff3e8355;
+  }
+
+@media screen and (max-width : 960px) {
+    .main {
+        padding: 20px;
+    }
+    .left-container {
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .left-container > h1 {
+        font-size: 7vh;
+    }
+    .left-container > p {
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width : 860px) {
+   .left-container {
+    margin: 20px;
+   }
+    .main {
+        margin: 0%;
+        padding: 0%;
+        height: 150vh;
+        width: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        place-content: center;
+        border-radius: 0;
+    }
+    .btn,input {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+    }
+    .error-message {
+        position: absolute;
+        right: 24vh;
+        font-weight: 700;
+        color: var(--tomato);
+    }
+}
